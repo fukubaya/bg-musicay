@@ -142,16 +142,16 @@ const COLORS = [
        // name
        ctx.font = "bold 87px sans-serif";
        ctx.textAlign = "center";
-       ctx.textBaseline = "top";
-       ctx.fillText(name.value, 11 + (711/2) ,20, 711);
+       ctx.textBaseline = "middle";
+       ctx.fillText(name.value, 11 + (711/2) , 64, 711);
        
        ctx.textAlign = "left";
        const rankWidth = 761;
-       ctx.fillText(rank1.value, 177, 142, rankWidth);
-       ctx.fillText(rank2.value, 177, 260, rankWidth);
-       ctx.fillText(rank3.value, 177, 378, rankWidth);
-       ctx.fillText(rank4.value, 177, 496, rankWidth);
-       ctx.fillText(rank5.value, 177, 615, rankWidth);
+       ctx.fillText(rank1.value, 177, 186, rankWidth);
+       ctx.fillText(rank2.value, 177, 304, rankWidth);
+       ctx.fillText(rank3.value, 177, 422, rankWidth);
+       ctx.fillText(rank4.value, 177, 540, rankWidth);
+       ctx.fillText(rank5.value, 177, 659, rankWidth);
      };
 
      onMounted(()=>{
