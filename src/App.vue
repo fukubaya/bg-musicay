@@ -247,25 +247,46 @@ const SONG_LIST = [
                   group
                   @update:model-value="loadImage"
                 >
-                  <v-btn value="gray">
+                  <v-btn
+                    value="gray"
+                    size="x-small"
+                  >
                     グレー
                   </v-btn>
-                  <v-btn value="yellow">
+                  <v-btn
+                    value="yellow"
+                    size="x-small"
+                  >
                     黄色
                   </v-btn>
-                  <v-btn value="blue">
+                  <v-btn
+                    value="blue"
+                    size="x-small"
+                  >
                     青
                   </v-btn>
-                  <v-btn value="red">
+                  <v-btn
+                    value="red"
+                    size="x-small"
+                  >
                     赤
                   </v-btn>
-                  <v-btn value="purple">
+                  <v-btn
+                    value="purple"
+                    size="x-small"
+                  >
                     紫
                   </v-btn>
-                  <v-btn value="pink">
+                  <v-btn
+                    value="pink"
+                    size="x-small"
+                  >
                     ピンク
                   </v-btn>
-                  <v-btn value="green">
+                  <v-btn
+                    value="green"
+                    size="x-small"
+                  >
                     緑
                   </v-btn>
                 </v-btn-toggle>
