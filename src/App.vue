@@ -66,9 +66,20 @@ const SONG_LIST = [
    "夢のキャンバス",
  ];
 
+const COLORS = [
+   "gray",
+   "yellow" ,
+   "blue",
+   "red",
+   "purple",
+   "pink",
+   "green",
+ ];
+
  export default defineComponent({
    setup(){
      const songList = SONG_LIST;
+     const colors = COLORS;
      const canvasRef = ref<HTMLCanvasElement>();
 
      const name = ref<string>("");
@@ -196,6 +207,7 @@ const SONG_LIST = [
     return {
       name,
       color,
+      colors,
       rank1,
       rank2,
       rank3,
@@ -240,67 +252,30 @@ const SONG_LIST = [
             md="6"
           >
             <v-row>
-              <v-col>
-                <v-btn-toggle
+              <v-col
+                xs="6"
+                xm="6"
+                md="6"
+              >
+                <v-select
                   v-model="color"
-                  rounded="0"
-                  group
+                  label="色"
+                  :items="colors"
                   @update:model-value="loadImage"
-                >
-                  <v-btn
-                    value="gray"
-                    size="x-small"
-                  >
-                    グレー
-                  </v-btn>
-                  <v-btn
-                    value="yellow"
-                    size="x-small"
-                  >
-                    黄色
-                  </v-btn>
-                  <v-btn
-                    value="blue"
-                    size="x-small"
-                  >
-                    青
-                  </v-btn>
-                  <v-btn
-                    value="red"
-                    size="x-small"
-                  >
-                    赤
-                  </v-btn>
-                  <v-btn
-                    value="purple"
-                    size="x-small"
-                  >
-                    紫
-                  </v-btn>
-                  <v-btn
-                    value="pink"
-                    size="x-small"
-                  >
-                    ピンク
-                  </v-btn>
-                  <v-btn
-                    value="green"
-                    size="x-small"
-                  >
-                    緑
-                  </v-btn>
-                </v-btn-toggle>
+                />
               </v-col>
 
-              <v-col>
+              <v-col
+                xs="6"
+                xm="6"
+                md="6"
+              >
                 <v-btn
                   icon="mdi-download"
-                  size="x-small"
                   @click="downloadImage"
                 />
                 <v-btn
                   icon="mdi-twitter"
-                  size="x-small"
                   @click="openTwitter"
                 />
               </v-col>
