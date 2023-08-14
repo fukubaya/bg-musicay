@@ -140,18 +140,18 @@ const COLORS = [
        ctx.drawImage(img.value, 0, 0);
        
        // name
-       ctx.font = "bold 90px sans-serif";
+       ctx.font = "bold 87px sans-serif";
        ctx.textAlign = "center";
        ctx.textBaseline = "top";
-       ctx.fillText(name.value, 11 + (711/2) ,17, 711);
+       ctx.fillText(name.value, 11 + (711/2) ,20, 711);
        
        ctx.textAlign = "left";
        const rankWidth = 761;
-       ctx.fillText(rank1.value, 177, 139, rankWidth);
-       ctx.fillText(rank2.value, 177, 257, rankWidth);
-       ctx.fillText(rank3.value, 177, 375, rankWidth);
-       ctx.fillText(rank4.value, 177, 493, rankWidth);
-       ctx.fillText(rank5.value, 177, 612, rankWidth);
+       ctx.fillText(rank1.value, 177, 142, rankWidth);
+       ctx.fillText(rank2.value, 177, 260, rankWidth);
+       ctx.fillText(rank3.value, 177, 378, rankWidth);
+       ctx.fillText(rank4.value, 177, 496, rankWidth);
+       ctx.fillText(rank5.value, 177, 615, rankWidth);
      };
 
      onMounted(()=>{
