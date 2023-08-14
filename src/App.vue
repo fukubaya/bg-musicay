@@ -237,7 +237,7 @@ const COLORS = [
       <v-container>
         <v-row>
           <v-col
-            xs="12"
+            cols="12"
             sm="12"
             md="6"
           >
@@ -247,13 +247,13 @@ const COLORS = [
             />
           </v-col>
           <v-col
-            xs="12"
+            cols="12"
             sm="12"
             md="6"
           >
             <v-row>
               <v-col
-                xs="6"
+                cols="6"
                 xm="6"
                 md="6"
               >
@@ -266,7 +266,7 @@ const COLORS = [
               </v-col>
 
               <v-col
-                xs="6"
+                cols="6"
                 xm="6"
                 md="6"
               >
