@@ -213,7 +213,7 @@ const SONG_LIST = [
 </script>
 
 <template>
-  <v-app id="bgongaku">
+  <v-app id="bg-musicday">
     <v-app-bar
       density="compact"
       color="primary"
