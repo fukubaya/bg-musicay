@@ -8,6 +8,7 @@ import imgPurple from "./assets/purple.png";
 import imgPink from "./assets/pink.png";
 import imgGreen from "./assets/green.png";
 
+const APP_URL = "https://bg-musicday.web.app/";
 const SONG_LIST = [
    "OiSa",
    "わたし、恋始めたってよ！",
@@ -200,7 +201,7 @@ const COLORS = [
 
        const text = texts.join("\n") + "\n";
        const hashtag = hashtags.join(",");
-       const url = "https://twitter.com/intent/tweet?text=" + encodeURI(text) + "&hashtags=" + encodeURI(hashtag);
+       const url = "https://twitter.com/intent/tweet?text=" + encodeURI(text) + "&hashtags=" + encodeURI(hashtag) + "&url=" + encodeURI(APP_URL);
        window.open(url, "_blnak");
      };
 
